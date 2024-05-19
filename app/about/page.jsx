@@ -9,6 +9,28 @@ const poppins = Poppins({
 
 export default function About() {
 
+    const [data, setData] = useState([{
+        img: "https://auair.tech/images/auon.jpg",
+        name: "Syed Aoun Shah",
+        postion: "President"
+    },
+    {
+        img: "https://auair.tech/images/auon.jpg",
+        name: "Syed Aoun Shah",
+        postion: "President"
+    },
+    {
+        img: "https://auair.tech/images/auon.jpg",
+        name: "Syed Aoun Shah",
+        postion: "President"
+    }
+        , {
+        img: "https://auair.tech/images/auon.jpg",
+        name: "Syed Aoun Shah",
+        postion: "President"
+    }
+    ])
+
     return <main className={"px-6 lg:px-16 font-poppins my-16" + + poppins.className}>
         <section className=" max-w-screen min-h-screen flex flex-col lg:flex-row justify-between">
             <div className="flex-1 flex flex-col gap-2">
@@ -28,12 +50,22 @@ export default function About() {
             </div>
         </section>
 
-        <section className="max-w-screen my-8 min-h-screen">
+        <section className="max-w-screen my-8 lg:min-h-0 min-h-screen">
             <div className="flex-1 flex flex-col gap-2">
                 <h6 className={"text-[#0e1d3d7e]  font-semibold text-lg " + poppins.className}>Our Team</h6>
                 <h1 className={"text-3xl font-bold mb-4 " + poppins.className}>About Our Team</h1>
-                
 
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {
+                        data.map(i => <div className="col-span-1">
+                            <div className={` ${poppins.className} my-4  cursor-pointer  flex group flex-col items-center gap-2 justify-center`}>
+                                <img src={i.img} className="w-64 rounded-full h-64 object-cover border-[8px] p-2 border-sky-700 transition-all duration-150 group-hover:border-white" />
+                                <p className=" text-xl font-bold">{i.name}</p>
+                                <p className="text-lg font-semibold text-sky-700">President</p>
+                            </div>
+                        </div>)
+                    }
+                </div>
 
             </div>
         </section>
