@@ -97,6 +97,75 @@ export default function Home() {
       </section>
 
 
+      <section className="text-center my-8 w-full">
+        <h6 className={"text-[#0e1d3d7e] w-full font-bold " + poppins.className}>COMPETITIION CATEGORIES</h6>
+        <h1 className={"text-5xl font-bold w-full my-2 " + poppins.className}>Seven Competition Categories</h1>
+
+
+        <div className="flex flex-wrap flex-col lg:flex-row my-8 justify-center gap-4 px-4 relative">
+          <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
+            <img className=" w-24 rounded-full" src="/icons/robot-illustration.svg" />
+            <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>Robotics</p>
+            <Link href={'/events'} className='text-md whitespace-nowrap lg:text-md  font-medium px-4 lg:px-8 py-2 lg:py-3  rounded-md transition-all duration-300 bg-slate-200  hover:bg-slate-900  hover:text-white'>
+              View Events
+            </Link>
+          </div>
+
+          <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
+            <img className=" w-24 rounded-full" src="/icons/computer-illustration.svg" />
+            <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>Computer Science</p>
+            <Link href={'/events'} className='text-md whitespace-nowrap lg:text-md  font-medium px-4 lg:px-8 py-2 lg:py-3  rounded-md transition-all duration-300 bg-slate-200  hover:bg-slate-900  hover:text-white'>
+              View Events
+            </Link>
+          </div>
+          <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
+            <img className=" w-24 rounded-full" src="/icons/mechanical-illustration.svg" />
+            <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>Mechanical</p>
+            <Link href={'/events'} className='text-md whitespace-nowrap lg:text-md  font-medium px-4 lg:px-8 py-2 lg:py-3  rounded-md transition-all duration-300 bg-slate-200  hover:bg-slate-900  hover:text-white'>
+              View Events
+            </Link>
+          </div>
+
+          <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
+            <img className=" w-24 rounded-full" src="/icons/pcb-illustration.svg" />
+            <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>Electrical</p>
+            <Link href={'/events'} className='text-md whitespace-nowrap lg:text-md  font-medium px-4 lg:px-8 py-2 lg:py-3  rounded-md transition-all duration-300 bg-slate-200  hover:bg-slate-900  hover:text-white'>
+              View Events
+            </Link>
+          </div>
+
+          <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
+            <img className=" w-24 rounded-full" src="/icons/solar.svg" />
+            <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>Physics</p>
+            <Link href={'/events'} className='text-md whitespace-nowrap lg:text-md  font-medium px-4 lg:px-8 py-2 lg:py-3  rounded-md transition-all duration-300 bg-slate-200  hover:bg-slate-900  hover:text-white'>
+              View Events
+            </Link>
+          </div>
+
+          <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
+            <img className=" w-24 rounded-full" src="/icons/math-illustration.svg" />
+            <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>Mathematics</p>
+            <Link href={'/events'} className='text-md whitespace-nowrap lg:text-md  font-medium px-4 lg:px-8 py-2 lg:py-3  rounded-md transition-all duration-300 bg-slate-200  hover:bg-slate-900  hover:text-white'>
+              View Events
+            </Link>
+          </div>
+
+          <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
+            <img className=" w-24 rounded-full" src="/icons/sports.svg" />
+            <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>ESports</p>
+            <Link href={'/events'} className='text-md whitespace-nowrap lg:text-md  font-medium px-4 lg:px-8 py-2 lg:py-3  rounded-md transition-all duration-300 bg-slate-200  hover:bg-slate-900  hover:text-white'>
+              View Events
+            </Link>
+          </div>
+
+
+
+
+        </div>
+
+      </section>
+
+
 
       <section className="partnerships">
         <div className="partnerships-header">
