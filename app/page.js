@@ -70,7 +70,7 @@ export default function Home() {
 
 
   const containerWidth = 100 * images.length / slidesToShow;
-  const translateX = -(slideIndex * (10 / slidesToShow));
+  const translateX = -(slideIndex * (20 / slidesToShow));
 
   return (
     <main >
@@ -238,7 +238,7 @@ export default function Home() {
         </div>
         <div className="slider" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
           <div
-            className="slider-container"
+            className="slider-container "
             style={{
               width: `${containerWidth}%`,
               transform: `translateX(${translateX}%)`
@@ -246,7 +246,7 @@ export default function Home() {
             ref={slideContainerRef}
           >
             {images.map((src, index) => (
-              <div className="slide" key={index} style={{ width: `${100 / slidesToShow}%` }}>
+              <div className="slide flex flex-row justify-center" key={index} style={{ width: `${100 / slidesToShow}%` }}>
                 <img src={src} alt={`Partner ${index + 1}`} width="100%" />
               </div>
             ))}

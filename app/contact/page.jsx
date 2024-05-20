@@ -50,7 +50,7 @@ export default function Page() {
             </div>
 
         </section>
-        <div id="mirpur" className="w-screen h-screen map-container">
+        <div id="mirpur" className="max-w-screen overflow-hidden h-screen map-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.4625523439804!2d73.74244347431491!3d33.14948146486069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fec085ec688ef%3A0xd988766d3ccdd31c!2sMirpur%20University%20of%20Science%20and%20Technology%20(MUST)!5e0!3m2!1sen!2s!4v1716107474255!5m2!1sen!2s"
            
