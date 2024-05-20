@@ -14,7 +14,7 @@ export default function Page() {
             <h6 className={"text-[#0e1d3d7e] font-bold " + poppins.className}>NEED HELP?</h6>
             <h1 className={"text-5xl font-bold my-2 " + poppins.className}>Get In Touch With us</h1>
 
-            <div className="flex flex-row my-8 justify-between gap-4 px-4 relative">
+            <div className="flex  flex-col lg:flex-row my-8 justify-between gap-4 px-4 relative">
                 <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
                     <img className=" bg-sky-700 p-4 w-16 rounded-full" src="/icons/linkedin-dark.png" />
                     <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>Linkedin Page</p>
