@@ -70,10 +70,6 @@ export default function Home() {
   return (
     <main>
 
-
-
-
-
       <section className="partnerships">
         <div className="partnerships-header">
           <h4>OUR PARTNERSHIPS</h4>

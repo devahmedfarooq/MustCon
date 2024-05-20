@@ -11,20 +11,7 @@
     @apply bg-[#0e2b3d]
 }
 
-.font-poppins {
-    font-family: 'Poppins', sans-serif;
-}
-
-.navtab.active {
-    color: #E74C3C;
-    font-weight: 600;
-}
-
-.underline {
-    transition: left 0.3s ease, width 0.3s ease;
-}
-
-#outer-tab::-webkit-scrollbar {
+.navbar::-webkit-scrollbar {
     display: none;
 }
 
