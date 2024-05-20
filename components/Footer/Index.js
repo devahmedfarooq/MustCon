@@ -6,6 +6,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
+const MUSTDIRECTIONS = "https://www.google.com/maps/dir//4PXW%2BQ2R+Mirpur+University+of+Science+and+Technology+(MUST),+College+Rd,+New+Mirpur+City,+Azad+Jammu+and+Kashmir+10250/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x391fec085ec688ef:0xd988766d3ccdd31c?sa=X&ved=1t:57443&ictx=111"
 
 const poppins = Poppins({
     weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -46,11 +47,11 @@ export default function Index() {
                 </div>
 
                 <div className="flex-[2] flex flex-col my-4 gap-4" >
-                    <h4 className="text-3xl font-medium"> Top Events </h4>
-                    <Link href={"/about"} className="flex flex-row items-center gap-4"> <IoLocationSharp size={24} /> <p className="text-lg" > Mirpur, AJK </p>  </Link>
-                    <Link href={"/about"} className="flex flex-row items-center gap-4"> <MdEmail size={24} /> <p className="text-lg" > info@mustcon.com</p>  </Link>
-                    <Link href={"/about"} className="flex flex-row items-center gap-4"> <FaPhoneAlt size={24} /> <p className="text-lg" > +92 316 9322863 </p>  </Link>
-                    <Link href={"/about"} className="flex flex-row items-center gap-4"> <FaPhoneAlt size={24} /> <p className="text-lg" > 051 9153275 </p>  </Link>
+                    <h4 className="text-3xl font-medium"> Contact </h4>
+                    <Link href={"MUSTDIRECTIONS"} className="flex flex-row items-center gap-4"> <IoLocationSharp size={24} /> <p className="text-lg" > Mirpur, AJK </p>  </Link>
+                    <Link href={"mailto:info@mustcon.com"} className="flex flex-row items-center gap-4"> <MdEmail size={24} /> <p className="text-lg" > info@mustcon.com</p>  </Link>
+                    <Link href={"tel:+923169322863"} className="flex flex-row items-center gap-4"> <FaPhoneAlt size={24} /> <p className="text-lg" > +92 316 9322863 </p>  </Link>
+                    <Link href={"tel:0519153275"} className="flex flex-row items-center gap-4"> <FaPhoneAlt size={24} /> <p className="text-lg" > 051 9153275 </p>  </Link>
                 </div>
             </section>
 
