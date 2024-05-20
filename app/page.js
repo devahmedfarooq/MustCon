@@ -167,6 +167,66 @@ export default function Home() {
 
 
 
+
+
+      <section className="min-h-screen flex flex-col justify-center py-8">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap">
+            <div className="w-full xl:w-1/2">
+              <div className="mb-6">
+                <h6 className={"text-[#0e1d3d7e] font-bold " + poppins.className}>Why Attend Mustcon</h6>
+                <h1 className={"text-5xl font-bold my-2 " + poppins.className}>The Kashmir's largest technical Olympiad</h1>
+              </div>
+              <div className="mt-5 text-gray-600 ">
+                <p className="text-justify">
+                  <span> Mustcon will provide an opportunity to learn new concepts, improve problem-solving skills,
+                    and develop familiarity with industrial automation and multi-disciplinary events.
+                    It will improve the students' self-confidence, skill sets and their motivation towards technical development.
+                  </span> <span>
+                    Mustcon promises to be bigger and better than before. Apart from the usual technical events, the organizing team is working towards
+                    some social events collections.
+                  </span>
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div className="flex  flex-col lg:flex-row my-8 justify-between gap-4 px-4 relative">
+                <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
+                    <img className=" bg-sky-700 p-4 w-16 rounded-full" src="/icons/linkedin-dark.png" />
+                    <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>Linkedin Page</p>
+                    <Link href={"https://linkedin.com/airtech2024"} className={`${poppins.className} text-md text-slate-950 font-normal`}>linkedin.com/airtech2024</Link>
+                </div>
+
+                <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
+                    <img className=" bg-sky-700 p-4 w-16 rounded-full" src="/icons/phone-white.png" />
+                    <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>Call Us</p>
+                    <Link href={"tel:+923169322863"} className={`${poppins.className} text-md text-slate-950 font-normal`}>+92 316 9322863</Link>
+                </div>
+
+                <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
+                    <img className=" bg-sky-700 p-4 w-16 rounded-full" src="/icons/email.png" />
+                    <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>Email</p>
+                    <Link href={"mailto:ahmedfarooq.dev@gmail.com"} className={`${poppins.className} text-md text-slate-950 font-normal`}>ahmedfarooq.dev@gmail.com</Link>
+                </div>
+
+                <div className="min-w-[250px] lg:min-w-[350px] p-4 min-h-[275px] flex flex-col items-center justify-center gap-4 shadow-xl  shadow-[#00000010]">
+                    <img className=" bg-sky-700 p-4 w-16 rounded-full" src="/icons/location.png" />
+                    <p className={`${poppins.className} text-md text-slate-950 font-semibold`}>Our Location
+                    </p>
+                    <Link href={"https://www.google.com/maps/dir/33.1511051,73.7382126/4PXW%2BQ2R+Mirpur+University+of+Science+and+Technology+(MUST),+College+Rd,+New+Mirpur+City,+Azad+Jammu+and+Kashmir+10250/@33.1504163,73.7362415,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x391fec085ec688ef:0xd988766d3ccdd31c!2m2!1d73.7450184!2d33.149477?entry=ttu"} className={`${poppins.className} text-md text-slate-950 font-normal`}>Mirpur, AJK</Link>
+                </div>
+            </div>
+
+      
+      </section>
+
+
+
+
+
       <section className="partnerships">
         <div className="partnerships-header">
           <h4>OUR PARTNERSHIPS</h4>

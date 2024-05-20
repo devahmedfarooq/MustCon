@@ -44,11 +44,22 @@ export default function Page() {
             <h6 className={"text-[#0e1d3d7e] font-bold " + poppins.className}>ANY QUESTIONS?</h6>
             <h1 className={"text-5xl font-bold my-2 " + poppins.className}>Ask a Query</h1>
             <div className="flex flex-row my-8 justify-center items-center ">
-                <button  className='text-2xl font-medium px-8 py-4  rounded-md transition-all duration-300 bg-slate-200  hover:bg-slate-900  hover:text-white'>
+                <button className='text-2xl font-medium px-8 py-4  rounded-md transition-all duration-300 bg-slate-200  hover:bg-slate-900  hover:text-white'>
                     Contact Us
                 </button>
             </div>
 
         </section>
+        <div id="mirpur" className="w-screen h-screen map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.4625523439804!2d73.74244347431491!3d33.14948146486069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fec085ec688ef%3A0xd988766d3ccdd31c!2sMirpur%20University%20of%20Science%20and%20Technology%20(MUST)!5e0!3m2!1sen!2s!4v1716107474255!5m2!1sen!2s"
+           
+                style={{ border: 0,width:"100%",height:"100%" }}
+                allowFullScreen=""
+                loading="lazy"
+            />
+        </div>
+
+
     </main>
 }
