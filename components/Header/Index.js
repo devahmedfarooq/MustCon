@@ -6,11 +6,11 @@ import { RxCross2 } from "react-icons/rx";
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return <header className='sticky z-50 top-0 left-0 '>
-        <header className='grid max-w-screen bg-white  grid-cols-12 px-6 md:px-16  py-4 bg-whtie'>
-            <div className='col-span-3 flex flex-row justify-start items-start'>
+        <header className='flex flex-row max-w-screen justify-between bg-white  px-6 md:px-16  py-4 bg-whtie'>
+            <div className='flex-1 flex flex-row justify-start items-start'>
                 <Image width={64} height={64} src={"/logo.png"} className='w-12 md:w-12' />
             </div>
-            <nav className='lg:col-span-4 xl:col-span-6 lg:col-start-5  hidden lg:flex flex-row justify-between items-center ' >
+            <nav className='flex-1  hidden lg:flex flex-row justify-between items-center ' >
 
                 <div className='flex flex-row lg:gap-8 xl:gap-16 items-center whitespace-nowrap'>
                     <Link href={'/'} className='cursor-pointer transition-all hover:text-sky-600'>Home</Link>
