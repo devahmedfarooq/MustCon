@@ -1,7 +1,12 @@
 "use client"
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from 'react';
-
+import { Poppins } from "next/font/google";
+import Link from "next/link";
+const poppins = Poppins({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin']
+});
 export default function Home() {
   const [slideIndex, setSlideIndex] = useState(0);
   const [slidesToShow, setSlidesToShow] = useState(1);
@@ -68,9 +73,28 @@ export default function Home() {
   const translateX = -(slideIndex * (10 / slidesToShow));
 
   return (
-    <main>
+    <main >
 
+      <section className="flex px-4 py-6  md:px-4 min-h-[80vh] lg:justify-between lg:flex-row   flex-col justify-center items-start gap-8">
+        <div className="flex flex-col items-start justify-center gap-12 flex-1" >
+          <h1 className={"text-4xl font-bold " + poppins.className}>MUSTCON'24</h1>
+          <h3 className={"text-2xl font-bold " + poppins.className}>Kashmir's largest technical Olympiad</h3>
+          <p className={"text-lg font-medium " + poppins.className}>Air Tech ' 24 is designed to be the largest Technical Olympiad of Pakistan. It will encourage the practical implementation of engineering and applied sciences through a range of technical events in the fields of mechatronics, mechanical, electrical, computer sciences & applied sciences.</p>
+          <div className="flex flex-row items-center justify-between lg:justify-start gap-4">
+            <Link href={'/events'} className='text-md whitespace-nowrap lg:text-xl  font-medium px-4 lg:px-12 py-2 lg:py-4  rounded-md transition-all duration-300 bg-slate-200  hover:bg-slate-900  hover:text-white'>
+              View Events
+            </Link>
+            <Link href={'/'} className='text-md whitespace-nowrap lg:text-xl   font-medium px-4 lg:px-12 py-2 lg:py-4  rounded-md transition-all duration-300 bg-white text-slate-900 border-slate-900 border  hover:bg-white  hover:text-slate-900'>
+              Register
+            </Link>
+          </div>
+        </div>
+        <div className="flex-1">
+          <img src="/images/dev.svg" className="w-full max-w-[500px]" />
 
+        </div>
+
+      </section>
 
 
 
@@ -81,7 +105,7 @@ export default function Home() {
           <div className="partnership-showcase-shape-1">
             <img src="Images/shape.png" width="40px" alt="shape" />
           </div>
-         
+
         </div>
         <div className="slider" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
           <div
