@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 
       </Head>
 
-      <body className={inter.className}>
+      <body className={"scroll-smooth  " + inter.className}>
         <Header />
         {children}
         <Footer />
