@@ -48,7 +48,7 @@ export default function Header() {
                         <Link onClick={() => setMobileMenuOpen(false)} href={"/about"} className='text-xl font-medium active:text-sky-600 active:underline underline-offset-8' > About </Link>
                         <Link onClick={() => setMobileMenuOpen(false)} href={"/events"} className='text-xl font-medium active:text-sky-600 active:underline underline-offset-8' > Events </Link>
                         <Link onClick={() => setMobileMenuOpen(false)} href={"/ambassadors"} className='text-xl font-medium active:text-sky-600 active:underline underline-offset-8' > Ambassadors </Link>
-                        <Link onClick={() => setMobileMenuOpen(false)} href={"/contact"} className='text-xl font-medium active:text-sky-600 active:underline underline-offset-8' > Ambassadors </Link>
+                        <Link onClick={() => setMobileMenuOpen(false)} href={"/contact"} className='text-xl font-medium active:text-sky-600 active:underline underline-offset-8' > Contact </Link>
                         <Link onClick={() => setMobileMenuOpen(false)} href={"/register"} className='text-xl font-medium px-4 py-2 rounded-md transition-all duration-75 bg-slate-200  hover:bg-slate-900  hover:text-white' > Register Now </Link>
 
                     </div>
