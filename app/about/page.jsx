@@ -11,8 +11,8 @@ export default function About() {
 
     const [data, setData] = useState([{
         img: "https://auair.tech/images/auon.jpg",
-        name: "Syed Aoun Shah",
-        postion: "President"
+        name: "M.Umer Malik",
+        postion: "MUST"
     },
     {
         img: "https://auair.tech/images/auon.jpg",
@@ -32,7 +32,7 @@ export default function About() {
     ])
 
     return <main className={"px-6 lg:px-16 font-poppins my-16" + + poppins.className}>
-        <section className=" max-w-screen min-h-screen flex flex-col lg:flex-row justify-between">
+        <section className=" max-w-screen  flex flex-col lg:flex-row justify-between">
             <div className="flex-1 flex flex-col gap-2">
                 <h6 className={"text-[#0e1d3d7e]  font-semibold text-lg " + poppins.className}>About Us</h6>
                 <h1 className={"text-3xl font-bold mb-4 " + poppins.className}>Welcome to MustCon – Where Innovation Takes Center Stage!</h1>
@@ -45,8 +45,8 @@ export default function About() {
                 </div>
 
             </div>
-            <div className="flex-1 my-8">
-                <img src="/images/dev.svg" className="w-full" />
+            <div className="flex-1 w-full flex flex-row justify-center items-center my-8">
+                <img src="/images/about-us.svg" className="w-full max-w-[500px]" />
             </div>
         </section>
 
