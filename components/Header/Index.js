@@ -12,12 +12,12 @@ export default function Header() {
             </div>
             <nav className='flex-1  hidden lg:flex flex-row justify-between items-center ' >
 
-                <div className='flex flex-row lg:gap-8 xl:gap-16 items-center whitespace-nowrap'>
-                    <Link href={'/'} className='cursor-pointer transition-all hover:text-sky-600'>Home</Link>
-                    <Link href={'/about'} className='cursor-pointer transition-all hover:text-sky-600'>About</Link>
-                    <Link href={'/events'} className='cursor-pointer transition-all hover:text-sky-600'>Events</Link>
-                    <Link href={'/ambassadors'} className='cursor-pointer transition-all hover:text-sky-600'>Ambassadors</Link>
-                    <Link href={'/contact'} className='cursor-pointer transition-all hover:text-sky-600'>Contact Us</Link>
+                <div className='flex flex-row lg:gap-8 xl:gap-16 items-center text-slate-500 whitespace-nowrap'>
+                    <Link href={'/'} className='cursor-pointer transition-all hover:text-slate-900'>Home</Link>
+                    <Link href={'/about'} className='cursor-pointer transition-all hover:text-slate-900'>About</Link>
+                    <Link href={'/events'} className='cursor-pointer transition-all hover:text-slate-900'>Events</Link>
+                    <Link href={'/ambassadors'} className='cursor-pointer transition-all hover:text-slate-900'>Ambassadors</Link>
+                    <Link href={'/contact'} className='cursor-pointer transition-all hover:text-slate-900'>Contact Us</Link>
                     <Link href={'/register'} className='px-4 py-2 rounded-md transition-all duration-75 bg-slate-200  hover:bg-slate-900  hover:text-white cursor-pointer'>Register Now</Link>
                 </div>
 
@@ -44,11 +44,11 @@ export default function Header() {
                     </div>
 
                     <div className='flex my-4 flex-col justify-start items-start gap-8'>
-                        <Link onClick={() => setMobileMenuOpen(false)} href={"/"} className='text-xl font-medium active:text-sky-600 active:underline underline-offset-8' > Home </Link>
-                        <Link onClick={() => setMobileMenuOpen(false)} href={"/about"} className='text-xl font-medium active:text-sky-600 active:underline underline-offset-8' > About </Link>
-                        <Link onClick={() => setMobileMenuOpen(false)} href={"/events"} className='text-xl font-medium active:text-sky-600 active:underline underline-offset-8' > Events </Link>
-                        <Link onClick={() => setMobileMenuOpen(false)} href={"/ambassadors"} className='text-xl font-medium active:text-sky-600 active:underline underline-offset-8' > Ambassadors </Link>
-                        <Link onClick={() => setMobileMenuOpen(false)} href={"/contact"} className='text-xl font-medium active:text-sky-600 active:underline underline-offset-8' > Contact </Link>
+                        <Link onClick={() => setMobileMenuOpen(false)} href={"/"} className='text-xl font-medium active:text-slate-900 active:underline underline-offset-8' > Home </Link>
+                        <Link onClick={() => setMobileMenuOpen(false)} href={"/about"} className='text-xl font-medium active:text-slate-900 active:underline underline-offset-8' > About </Link>
+                        <Link onClick={() => setMobileMenuOpen(false)} href={"/events"} className='text-xl font-medium active:text-slate-900 active:underline underline-offset-8' > Events </Link>
+                        <Link onClick={() => setMobileMenuOpen(false)} href={"/ambassadors"} className='text-xl font-medium active:text-slate-900 active:underline underline-offset-8' > Ambassadors </Link>
+                        <Link onClick={() => setMobileMenuOpen(false)} href={"/contact"} className='text-xl font-medium active:text-slate-900 active:underline underline-offset-8' > Contact </Link>
                         <Link onClick={() => setMobileMenuOpen(false)} href={"/register"} className='text-xl font-medium px-4 py-2 rounded-md transition-all duration-75 bg-slate-200  hover:bg-slate-900  hover:text-white' > Register Now </Link>
 
                     </div>

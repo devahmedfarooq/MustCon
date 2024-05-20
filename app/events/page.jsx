@@ -86,7 +86,7 @@ export default function Events() {
                             />
                         </svg>
                     </div>
-                    <TETabs ref={contentRef}  className="navbar w-full text-xl flex flex-nowrap justify-around overflow-x-scroll" style={{ flexWrap: "nowrap", marginBottom: "0.7rem" }}>
+                    <TETabs ref={contentRef}  className="navbar w-full text-xl flex flex-nowrap justify-around overflow-x-hidden" style={{ flexWrap: "nowrap", marginBottom: "0.7rem" }}>
                         <TETabsItem
                             onClick={() => handleJustifyClick("Engineering")}
                             active={justifyActive === "Engineering"}
