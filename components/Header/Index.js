@@ -18,7 +18,7 @@ export default function Header() {
                     <Link href={'/events'} className='cursor-pointer transition-all hover:text-slate-900'>Events</Link>
                     <Link href={'/ambassadors'} className='cursor-pointer transition-all hover:text-slate-900'>Ambassadors</Link>
                     <Link href={'/contact'} className='cursor-pointer transition-all hover:text-slate-900'>Contact Us</Link>
-                    <Link href={'/register'} className='px-4 py-2 rounded-md transition-all duration-75 bg-slate-200  hover:bg-slate-900  hover:text-white cursor-pointer'>Register Now</Link>
+                    <Link href={'https://registrations.mustcon.com.pk/'} className='px-4 py-2 rounded-md transition-all duration-75 bg-slate-200  hover:bg-slate-900  hover:text-white cursor-pointer'>Register Now</Link>
                 </div>
 
 
@@ -49,7 +49,7 @@ export default function Header() {
                         <Link onClick={() => setMobileMenuOpen(false)} href={"/events"} className='text-xl font-medium active:text-slate-900 active:underline underline-offset-8' > Events </Link>
                         <Link onClick={() => setMobileMenuOpen(false)} href={"/ambassadors"} className='text-xl font-medium active:text-slate-900 active:underline underline-offset-8' > Ambassadors </Link>
                         <Link onClick={() => setMobileMenuOpen(false)} href={"/contact"} className='text-xl font-medium active:text-slate-900 active:underline underline-offset-8' > Contact </Link>
-                        <Link onClick={() => setMobileMenuOpen(false)} href={"/register"} className='text-xl font-medium px-4 py-2 rounded-md transition-all duration-75 bg-slate-200  hover:bg-slate-900  hover:text-white' > Register Now </Link>
+                        <Link onClick={() => setMobileMenuOpen(false)} href={"https://registrations.mustcon.com.pk/"} className='text-xl font-medium px-4 py-2 rounded-md transition-all duration-75 bg-slate-200  hover:bg-slate-900  hover:text-white' > Register Now </Link>
 
                     </div>
 

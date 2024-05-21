@@ -38,8 +38,7 @@ export default function About() {
                 <h1 className={"text-3xl font-bold mb-4 " + poppins.className}>Welcome to MustCon – Where Innovation Takes Center Stage!</h1>
 
                 <p className={`${poppins.className} my-4 text-xl border-l-2 pl-4 border-l-slate-900`}>
-                    Experience innovation at Air Tech '24, the largest Technical Olympiad in Pakistan, hosted by Air University, in Islamabad. Elevate technical skills in diverse fields, embrace practical problem-solving, and enjoy collaborative social events. Join us in shaping the future of technology at this dynamic engineering showcase.
-                </p>
+                MUSTCon’24 aims to be the flagship event for technology enthusiasts, innovators, and visionaries. MUSTCon’24 promises to provide a convergence of cutting-edge ideas, spirited competition, and unparalleled networking opportunities. Our mission is to inspire, educate, and empower participants across various domains, fostering a vibrant ecosystem of creativity & collaboration.                </p>
                 <div className="mt-8 ">
                     <Link href={"/"} className='text-2xl font-medium px-8 py-4 rounded-md transition-all duration-75 bg-slate-200  hover:bg-slate-900  hover:text-white' > Register Now </Link>
                 </div>

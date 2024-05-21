@@ -86,7 +86,17 @@ export default function Events() {
                             />
                         </svg>
                     </div>
-                    <TETabs ref={contentRef}  className="navbar w-full text-xl flex flex-nowrap justify-around overflow-x-hidden" style={{ flexWrap: "nowrap", marginBottom: "0.7rem" }}>
+                    <TETabs ref={contentRef} className="navbar w-full text-xl flex flex-nowrap justify-around overflow-x-hidden" style={{ flexWrap: "nowrap", marginBottom: "0.7rem" }}>
+
+                        <TETabsItem
+                            onClick={() => handleJustifyClick("gaming")}
+                            active={justifyActive === "gaming"}
+                            style={{ width: "max-content" }}
+                            color="dark"
+
+                        >
+                            Computing
+                        </TETabsItem>
                         <TETabsItem
                             onClick={() => handleJustifyClick("Engineering")}
                             active={justifyActive === "Engineering"}
@@ -95,24 +105,7 @@ export default function Events() {
                         >
                             Engineering
                         </TETabsItem>
-                        <TETabsItem
-                            onClick={() => handleJustifyClick("gaming")}
-                            active={justifyActive === "gaming"}
-                            style={{ width: "max-content" }}
-                            color="dark"
 
-                        >
-                            E-gaming
-                        </TETabsItem>
-                        <TETabsItem
-                            onClick={() => handleJustifyClick("Computing")}
-                            active={justifyActive === "Computing"}
-                            style={{ width: "max-content" }}
-                            color="dark"
-
-                        >
-                            Computing Competition
-                        </TETabsItem>
                         <TETabsItem
                             onClick={() => handleJustifyClick("Applied")}
                             active={justifyActive === "Applied"}
@@ -120,25 +113,7 @@ export default function Events() {
                             color="dark"
 
                         >
-                            Applied Sciences
-                        </TETabsItem>
-                        <TETabsItem
-                            onClick={() => handleJustifyClick("Management")}
-                            active={justifyActive === "Management"}
-                            style={{ width: "max-content" }}
-                            color="dark"
-
-                        >
-                            Management Sciences
-                        </TETabsItem>
-                        <TETabsItem
-                            onClick={() => handleJustifyClick("Social")}
-                            active={justifyActive === "Social"}
-                            style={{ width: "max-content" }}
-                            color="dark"
-
-                        >
-                            Social sciences
+                            Business
                         </TETabsItem>
                         <TETabsItem
                             onClick={() => handleJustifyClick("Sports")}
@@ -149,7 +124,24 @@ export default function Events() {
                         >
                             Sports
                         </TETabsItem>
+                        <TETabsItem
+                            onClick={() => handleJustifyClick("Stalls")}
+                            active={justifyActive === "Stalls"}
+                            style={{ width: "max-content" }}
+                            color="dark"
 
+                        >
+                            Stalls
+                        </TETabsItem>
+                        <TETabsItem
+                            onClick={() => handleJustifyClick("Computing")}
+                            active={justifyActive === "Computing"}
+                            style={{ width: "max-content" }}
+                            color="dark"
+
+                        >
+                            Socials
+                        </TETabsItem>
                     </TETabs>
                     <div ref={rightBtnRef} className="r-btn1 py-2 cursor-pointer text-black" data-target="home">
                         <svg
@@ -177,72 +169,83 @@ export default function Events() {
                     <TETabsPane show={justifyActive === "Engineering"}>
                         <div className="py-4 w-full">
                             <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"Engineering"} />
-                                <Index title={"Engineering"} />
-                                <Index title={"Engineering"} />
-                                <Index title={"Engineering"} />
+                                <Index title={"Industrial FYP Design Exhibition Expo 2024"} />
+                                <Index title={"Structure Stability Competition"} />
+                                <Index title={"Workshop on Matlab"} />
+                                <Index title={"Circuit Design (DLD)"} />
+                                <Index title={"Popsicle Bridge Competition"} />
+                                <Index title={"Robo-Wars"} />
+                                <Index title={"Speed Wiring"} />
+
+
                             </div>
                         </div>
                     </TETabsPane>
                     <TETabsPane show={justifyActive === "gaming"}>
                         <div className="py-4 w-full">
                             <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"gaming"} />
-                                <Index title={"gaming"} />
-                                <Index title={"gaming"} />
+                                <Index title={"Speed Programming Competion"} />
+                                <Index title={"Code Jail"} />
+                                <Index title={"Design Duels (UI/UX Competition)"} />
+                                <Index title={"Workshop on AI"} />
+                                <Index title={"Byte Brain Teasers (Computing Quiz)"} />
+                                <Index title={"SE Quiz (Software Engineering Quiz)"} />
+                                <Index title={"Web Development Competition"} />
+                                <Index title={"Application Development Competition"} />
+
+
                             </div>
                         </div>
                     </TETabsPane>
                     <TETabsPane show={justifyActive === "Computing"}>
                         <div className="py-4 w-full">
                             <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"Computing"} />
-                                <Index title={"Computing"} />
-                                <Index title={"Computing"} />
-                                <Index title={"Computing"} />
+                                <Index title={"FIFA 2023 Competition "} />
+                                <Index title={"TEKKEN 7 Competition  "} />
+                                <Index title={"PUBGM Competition "} />
+                                <Index title={"Call Of Duty Competition"} />
+                                <Index title={"Model United Nation"} />
+                                <Index title={"Autoshow"} />
+                                <Index title={"Qawwali Night"} />
+
+
                             </div>
                         </div>
                     </TETabsPane>
                     <TETabsPane show={justifyActive === "Applied"}>
                         <div className="py-4 w-full">
                             <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"gaming"} />
-                                <Index title={"Applied"} />
-                                <Index title={"Applied"} />
-                                <Index title={"Applied"} />
+                                <Index title={"Zindigi Prize MUST Campus Round"} />
+                                <Index title={"MUSTCon'24 IdeaFest "} />
                             </div>
                         </div>
                     </TETabsPane>
-                    <TETabsPane show={justifyActive === "Management"}>
-                        <div className="py-4 w-full">
-                            <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"Management"} />
-                                <Index title={"Management"} />
-                                <Index title={"Management"} />
-                                <Index title={"Management"} />
-                            </div>
-                        </div>
-                    </TETabsPane>
-                    <TETabsPane show={justifyActive === "Social"}>
-                        <div className="py-4 w-full">
-                            <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"Social"} />
-                                <Index title={"Social"} />
-                                <Index title={"Social"} />
-                                <Index title={"Social"} />
-                            </div>
-                        </div>
-                    </TETabsPane>
+
                     <TETabsPane show={justifyActive === "Sports"}>
                         <div className="py-4 w-full">
                             <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"Sports"} />
-                                <Index title={"Sports"} />
-                                <Index title={"Sports"} />
-                                <Index title={"Sports"} />
+                                <Index title={"Badminton (M/F)"} />
+                                <Index title={"Futsal"} />
+                                <Index title={"Basketball"} />
+                                <Index title={"Table Tennis (M/F)"} />
+                                <Index title={"Volleyball"} />
+
                             </div>
                         </div>
                     </TETabsPane>
+
+                    <TETabsPane show={justifyActive === "Stalls"}>
+                        <div className="py-4 w-full">
+                            <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
+                                <Index title={"Food Stalls - Mustians"} />
+                                <Index title={"Food Stalls - Bronze"} />
+                                <Index title={"Food Stalls - Silver"} />
+                                <Index title={"Exhibition Stalls - Bronze "} />
+                                <Index title={"Exhibition Stalls - Silver"} />
+                            </div>
+                        </div>
+                    </TETabsPane>
+
                 </TETabsContent>
             </div>
         </>

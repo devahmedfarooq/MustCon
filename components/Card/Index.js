@@ -24,13 +24,13 @@ export const Index = (title) => {
     return (
         <div className="max-w-sm rounded overflow-hidden shadow-lg w-[23%] max-[900px]:w-1/4  max-[750px]:w-[48%]  max-[550px]:w-[90%]">
             <img
-                className="w-full"
-                src="https://placehold.co/400x300"
+                className="w-full object-cover"
+                src="/images/events/CS QUIZ.png"
                 alt="Mechatronics Engineering"
             />
             <div className="parentToFetchTable px-6 py-4 flex flex-col items-start">
                 <div className="font-bold text-[18px] mb-2 text-left">
-                    {title.title}
+                MUSTCON - {title.title}
                 </div>
                 <p className="text-black dark:text-zinc-300 text-base">Events:</p>
                 <ul className="list-disc ml-4 text-[16px] text-black dark:text-zinc-400 text-left">
