@@ -165,7 +165,6 @@ export default function Events() {
 
             <div className="mb-3">
 
-
                 <TETabsContent>
                     <TETabsPane show={justifyActive === "Engineering"}>
                         <div className="py-4 w-full">
