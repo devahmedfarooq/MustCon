@@ -19,7 +19,325 @@ const poppins = Poppins({
 
 
 export default function Events() {
-    const [justifyActive, setJustifyActive] = useState("Engineering");
+    const [justifyActive, setJustifyActive] = useState("computing");
+
+    const [computing, setComputing] = useState([{
+        img: "/images/events/WEB DEVELOPMENT.png",
+        title: "MUSTCON - Web Development Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th May 9:00am - 4:00pm",
+        desc: "Dive into the digital world at MUSTCON's Web Development Competition!",
+        ticket: "1500"
+
+    },
+    {
+        img: "/images/events/APP DEVELOPMENT.png",
+        title: "MUSTCON - App Development Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th May 9:00am - 4:00pm",
+        desc: "Get your coding gears ready for MUSTCON's App Development Competition!",
+        ticket: "1500"
+
+    },
+    {
+        img: "/images/events/SPEED PROGRAMMING.png",
+        title: "MUSTCON - Speed Programming Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 12:00pm - 3:00pm",
+        desc: "Can you code at the speed of thought? Join MUSTCON's Speed Programming Competition!",
+        ticket: "1500"
+
+    },
+    {
+        img: "/images/events/SE QUIZ.png",
+        title: "MUSTCON - SE Quiz Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 2:30am - 4:30pm",
+        desc: "Test your software engineering knowledge at MUSTCON's SE Quiz Competition!",
+        ticket: "550"
+
+    },
+    {
+        img: "/images/events/CS QUIZ.png",
+        title: "MUSTCON - CS Quiz Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 1:00pm - 3:30pm",
+        desc: "Think you know your way around computer science? Prove it at MUSTCON's CS Quiz Competition!",
+        ticket: "500"
+
+    },
+    {
+        img: "/images/events/code jai.png",
+        title: "MUSTCON - Code Jail Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 12:00pm - 3:00pm",
+        desc: "Can you break out of the Code Jail? Join MUSTCON's Code Jail Competition!",
+        ticket: "500"
+
+    },
+    {
+        img: "/images/events/Design Duels.png",
+        title: "MUSTCON - Design Duels Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 12:00pm - 4:00pm",
+        desc: "Unleash your UI/UX design skills in a duel at MUSTCON's Design Duels Competition!",
+        ticket: "1500"
+
+    }, 
+    {
+        img: "/images/events/AI & ML.png",
+        title: "MUSTCON - Workshop on AI",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 12:30am - 2:30pm",
+        desc: "Explore the future at MUSTCON's Workshop on AI!",
+        ticket: "150"
+
+    },
+    ])
+
+    const [engineering, setEngineering] = useState([{
+        img: "/images/events/industrial fyp.png",
+        title: "MUSTCON - Industrial FYP Design Exhibition Expo 2024",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 9:00am - 5:00pm",
+        desc: "Showcase your industrial design prowess at MUSTCON's Industrial FYP Design Competition!",
+        ticket: "500"
+
+    },
+    {
+        img: "/images/events/structure stability.png",
+        title: "MUSTCON - Structure Stability Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 12:00pm - 4:00pm",
+        desc: "Build structures that stand the test of time at MUSTCON's Structure Stability Competition!",
+        ticket: "500"
+
+    },
+    {
+        img: "/images/events/matlab.png",
+        title: "MUSTCON - Workshop on Matlab",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 12:00pm - 2:00pm",
+        desc: "NA",
+        ticket: "100"
+
+    },
+    {
+        img: "/images/events/circuit design.png",
+        title: "MUSTCON - Circuit Design (DLD)",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 12:00pm - 2:00pm",
+        desc: "Let your circuits shine at MUSTCON's Circuit Design Competition!",
+        ticket: "500"
+
+    },
+    {
+        img: "/images/events/popsicle bridge.png",
+        title: "MUSTCON - Popsicle Bridge Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 2:00pm - 4:00pm",
+        desc: "Build bridges, literally, at MUSTCON's Popsicle Bridge Competition!",
+        ticket: "600"
+
+    },
+    {
+        img: "/images/events/ROBO WARS.png",
+        title: "MUSTCON - Robo-Wars",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 3:00pm - 9:00pm",
+        desc: "Gear up for mechanical mayhem at MUSTCON's Robo Wars!",
+        ticket: "3000"
+
+    },
+    {
+        img: "/images/events/speed wiring.png",
+        title: "MUSTCON - Speed Wiring",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th May 10:00am - 12:30pm",
+        desc: "Fasten your wires and compete at the speed of light in MUSTCON's Speed Wiring Competition!",
+        ticket: "500"
+
+    }
+    ])
+
+    const [business, setBusiness] = useState([{
+        img: "/images/events/zindagi prize.png",
+        title: "MUSTCON - Zindigi Prize MUST Campus Round",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th May 10:00am - 2:00pm",
+        desc: "Engage in diplomatic discourse at MUSTCON's Model United Nations!",
+        ticket: "500"
+
+    },
+    {
+        img: "/images/events/idea fest.png",
+        title: "MUSTCON - MUSTCon'24 IdeaFest",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th May 9:00am - 4:00pm",
+        desc: "Get your coding gears ready for MUSTCON's App Development Competition!",
+        ticket: "1500"
+
+    }
+    ])
+
+    const [sports, setSports] = useState([{
+        img: "/images/events/badminton.png",
+        title: "MUSTCON - Badminton (M/F)",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th",
+        desc: "Serve up some competition at MUSTCON's Badminton (M/F) Competition!",
+        ticket: "1000"
+
+    },
+    {
+        img: "/images/events/futsal.png",
+        title: "MUSTCON - Futsal",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th",
+        desc: "Kick it on the field at MUSTCON's Futsal Competition!",
+        ticket: "3000"
+
+    },
+    {
+        img: "/images/events/basketball.png",
+        title: "MUSTCON - Basketball",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th",
+        desc: "Shoot some hoops at MUSTCON's Basketball Competition!",
+        ticket: "3000"
+
+    },
+    {
+        img: "/images/events/table tennis.png",
+        title: "MUSTCON - Table Tennis (M/F)",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th May ",
+        desc: "Smash your way to victory at MUSTCON's Table Tennis Competition!",
+        ticket: "1000"
+
+    },
+    {
+        img: "/images/events/APP DEVELOPMENT.png",
+        title: "MUSTCON - Volleyball",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th May 9:00am - 4:00pm",
+        desc: "NA",
+        ticket: "1500"
+
+    }
+
+    ])
+
+    const [stalls, setStalls] = useState([{
+        img: "/images/events/exhibition stall silver.png",
+        title: "MUSTCON - Food Stalls - Mustians",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th - 30th May 8:00am - 9:00pm",
+        desc: "Taste the delights at MUSTCON's Food Stalls Mustians!",
+        ticket: "3000"
+
+    },
+    {
+        img: "/images/events/food stall bronze.png",
+        title: "MUSTCON - Food Stalls - Bronze",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th - 30th May 8:00am - 9:00pm",
+        desc: "Upgrade your culinary experience at MUSTCON's Food Stalls Bronze!",
+        ticket: "10000"
+
+    },
+    {
+        img: "/images/events/food stall silver.png",
+        title: "MUSTCON - Food Stalls - Silver",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th - 30th May 8:00am - 9:00pm",
+        desc: "Indulge in gourmet treats at MUSTCON's Food Stalls Silver!",
+        ticket: "20000"
+
+    },
+    {
+        img: "/images/events/exhibition stall bronze.png",
+        title: "Exhibition Stalls - Bronze",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th - 30th May 9:00am - 4:00pm",
+        desc: "Explore innovation at MUSTCON's Exhibition Stalls Bronze!",
+        ticket: "25000"
+
+    },
+    {
+        img: "/images/events/exhibition stall silver.png",
+        title: "Exhibition Stalls - Silver",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th- - 30th May 9:00am - 4:00pm",
+        desc: "Discover brilliance at MUSTCON's Exhibition Stalls Silver!",
+        ticket: "50000"
+
+    }
+
+    ])
+
+    const [socials, setSocials] = useState([{
+        img: "/images/events/fifa 23.png",
+        title: "MUSTCON - FIFA 2023 Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 12:30pm - 4:00pm",
+        desc: "Score goals and glory at MUSTCON's FIFA 23 Competition!",
+        ticket: "1000"
+
+    },
+    {
+        img: "/images/events/tekken 8.png",
+        title: "MUSTCON - TEKKEN 7 Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 12:30pm - 4:00pm",
+        desc: "Battle it out in Tekken at MUSTCON's Tekken Competition!",
+        ticket: "1000"
+
+    },
+    {
+        img: "/images/events/pubgm competition.png",
+        title: "MUSTCON - PUBGM Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "29th May 12:30pm - 4:00pm",
+        desc: "Survive and conquer in PUBGM at MUSTCON's PUBGM Competition!",
+        ticket: "500"
+
+    },
+    {
+        img: "/images/events/call of duty.png",
+        title: "MUSTCON - Call Of Duty Competition",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th May 9:00am - 4:00pm",
+        desc: "Answer the call of duty at MUSTCON's Call of Duty Competition!",
+        ticket: "800"
+
+    },
+    {
+        img: "/images/events/mun.png",
+        title: "MUSTCON - Model United Nation",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th May 10:00am - 2:00pm",
+        desc: "Engage in diplomatic discourse at MUSTCON's Model United Nations!",
+        ticket: "500"
+
+    },
+    {
+        img: "/images/events/APP DEVELOPMENT.png",
+        title: "MUSTCON - Autoshow",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th May 9:00am - 4:00pm",
+        desc: "Get your coding gears ready for MUSTCON's App Development Competition!",
+        ticket: "1500"
+    },
+    {
+        img: "/images/events/qawali.png",
+        title: "MUSTCON - Qawwali Night",
+        venue: "MUST University Mirpur Azad Kahmir",
+        date: "30th May 6:00pm - 10:00pm",
+        desc: "Experience the soulful melodies at MUSTCON's Qawwali Night!",
+        ticket: "1000"
+    }
+    ])
 
     const handleJustifyClick = (value) => {
         if (value === justifyActive) {
@@ -31,6 +349,16 @@ export default function Events() {
     const leftBtnRef = useRef(null);
     const rightBtnRef = useRef(null);
     const contentRef = useRef(null);
+
+    const renderEvents = (events) => (
+        <div className="py-4 w-full">
+            <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
+                {events.map((event, index) => (
+                    <Index key={index} event={event} />
+                ))}
+            </div>
+        </div>
+    );
 
     useEffect(() => {
         const leftBtn = leftBtnRef.current;
@@ -89,8 +417,8 @@ export default function Events() {
                     <TETabs ref={contentRef} className="navbar w-full text-xl flex flex-nowrap justify-around overflow-x-hidden" style={{ flexWrap: "nowrap", marginBottom: "0.7rem" }}>
 
                         <TETabsItem
-                            onClick={() => handleJustifyClick("gaming")}
-                            active={justifyActive === "gaming"}
+                            onClick={() => handleJustifyClick("computing")}
+                            active={justifyActive === "computing"}
                             style={{ width: "max-content" }}
                             color="dark"
 
@@ -107,8 +435,8 @@ export default function Events() {
                         </TETabsItem>
 
                         <TETabsItem
-                            onClick={() => handleJustifyClick("Applied")}
-                            active={justifyActive === "Applied"}
+                            onClick={() => handleJustifyClick("Business")}
+                            active={justifyActive === "Business"}
                             style={{ width: "max-content" }}
                             color="dark"
 
@@ -134,8 +462,8 @@ export default function Events() {
                             Stalls
                         </TETabsItem>
                         <TETabsItem
-                            onClick={() => handleJustifyClick("Computing")}
-                            active={justifyActive === "Computing"}
+                            onClick={() => handleJustifyClick("Socials")}
+                            active={justifyActive === "Socials"}
                             style={{ width: "max-content" }}
                             color="dark"
 
@@ -166,84 +494,34 @@ export default function Events() {
 
 
                 <TETabsContent>
+
+                    <TETabsPane show={justifyActive === "computing"}>
+                        {renderEvents(computing)}
+
+                    </TETabsPane>
                     <TETabsPane show={justifyActive === "Engineering"}>
-                        <div className="py-4 w-full">
-                            <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"Industrial FYP Design Exhibition Expo 2024"} />
-                                <Index title={"Structure Stability Competition"} />
-                                <Index title={"Workshop on Matlab"} />
-                                <Index title={"Circuit Design (DLD)"} />
-                                <Index title={"Popsicle Bridge Competition"} />
-                                <Index title={"Robo-Wars"} />
-                                <Index title={"Speed Wiring"} />
+                        {renderEvents(engineering)}
 
-
-                            </div>
-                        </div>
                     </TETabsPane>
-                    <TETabsPane show={justifyActive === "gaming"}>
-                        <div className="py-4 w-full">
-                            <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"Speed Programming Competion"} />
-                                <Index title={"Code Jail"} />
-                                <Index title={"Design Duels (UI/UX Competition)"} />
-                                <Index title={"Workshop on AI"} />
-                                <Index title={"Byte Brain Teasers (Computing Quiz)"} />
-                                <Index title={"SE Quiz (Software Engineering Quiz)"} />
-                                <Index title={"Web Development Competition"} />
-                                <Index title={"Application Development Competition"} />
 
+                    <TETabsPane show={justifyActive === "Business"}>
+                        {renderEvents(business)}
 
-                            </div>
-                        </div>
-                    </TETabsPane>
-                    <TETabsPane show={justifyActive === "Computing"}>
-                        <div className="py-4 w-full">
-                            <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"FIFA 2023 Competition "} />
-                                <Index title={"TEKKEN 7 Competition  "} />
-                                <Index title={"PUBGM Competition "} />
-                                <Index title={"Call Of Duty Competition"} />
-                                <Index title={"Model United Nation"} />
-                                <Index title={"Autoshow"} />
-                                <Index title={"Qawwali Night"} />
-
-
-                            </div>
-                        </div>
-                    </TETabsPane>
-                    <TETabsPane show={justifyActive === "Applied"}>
-                        <div className="py-4 w-full">
-                            <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"Zindigi Prize MUST Campus Round"} />
-                                <Index title={"MUSTCon'24 IdeaFest "} />
-                            </div>
-                        </div>
                     </TETabsPane>
 
                     <TETabsPane show={justifyActive === "Sports"}>
-                        <div className="py-4 w-full">
-                            <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"Badminton (M/F)"} />
-                                <Index title={"Futsal"} />
-                                <Index title={"Basketball"} />
-                                <Index title={"Table Tennis (M/F)"} />
-                                <Index title={"Volleyball"} />
+                        {renderEvents(sports)}
 
-                            </div>
-                        </div>
                     </TETabsPane>
 
                     <TETabsPane show={justifyActive === "Stalls"}>
-                        <div className="py-4 w-full">
-                            <div className="flex flex-wrap justify-center gap-4 bg-zinc-100 w-full">
-                                <Index title={"Food Stalls - Mustians"} />
-                                <Index title={"Food Stalls - Bronze"} />
-                                <Index title={"Food Stalls - Silver"} />
-                                <Index title={"Exhibition Stalls - Bronze "} />
-                                <Index title={"Exhibition Stalls - Silver"} />
-                            </div>
-                        </div>
+                        {renderEvents(stalls)}
+
+                    </TETabsPane>
+                    <TETabsPane show={justifyActive === "Socials"}>
+                        {renderEvents(socials)}
+
+
                     </TETabsPane>
 
                 </TETabsContent>
