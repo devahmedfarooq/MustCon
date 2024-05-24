@@ -33,16 +33,16 @@ export default function Index() {
                     <h4 className="text-3xl font-medium"> Explore </h4>
                     <Link href={"/about"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > About </p>  </Link>
 {/*                     <Link href={"/about"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > Ambassadors </p>  </Link>
- */}                    <Link href={"/about"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > Events </p>  </Link>
-                    <Link href={"/about"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > Contact Us </p>  </Link>
+ */}                    <Link href={"/events"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > Events </p>  </Link>
+                    <Link href={"/contact"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > Contact Us </p>  </Link>
                 </div>
 
                 <div className="flex-[2] flex flex-col my-4 gap-4" >
                     <h4 className="text-3xl font-medium"> Top Events </h4>
-                    <Link href={"/about"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > Speed Programming </p>  </Link>
-                    <Link href={"/about"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > Website Competition </p>  </Link>
-                    <Link href={"/about"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > UI/UX Competition </p>  </Link>
-                    <Link href={"/about"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > Robo-Wars </p>  </Link>
+                    <Link href={"/events"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > Speed Programming </p>  </Link>
+                    <Link href={"/events"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > Website Competition </p>  </Link>
+                    <Link href={"/events"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > UI/UX Competition </p>  </Link>
+                    <Link href={"/events"} className="flex flex-row items-center gap-4"> <FaAnglesRight size={24} /> <p className="text-lg" > Robo-Wars </p>  </Link>
                 </div>
 
                 <div className="flex-[2] flex flex-col my-4 gap-4" >
