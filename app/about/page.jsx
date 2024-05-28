@@ -91,7 +91,7 @@ export default function About() {
                 <p className={`${poppins.className} my-4 text-xl border-l-2 pl-4 border-l-slate-900`}>
                     MUSTCon’24 aims to be the flagship event for technology enthusiasts, innovators, and visionaries. MUSTCon’24 promises to provide a convergence of cutting-edge ideas, spirited competition, and unparalleled networking opportunities. Our mission is to inspire, educate, and empower participants across various domains, fostering a vibrant ecosystem of creativity & collaboration.                </p>
                 <div className="mt-8 ">
-                    <Link href={"/"} className='text-2xl font-medium px-8 py-4 rounded-md transition-all duration-75 bg-slate-200  hover:bg-slate-900  hover:text-white' > Register Now </Link>
+                    <Link href={"https://registrations.mustcon.com.pk"}  className='text-2xl font-medium px-8 py-4 rounded-md transition-all duration-75 bg-slate-200  hover:bg-slate-900  hover:text-white' > Register Now </Link>
                 </div>
 
             </div>
@@ -107,7 +107,7 @@ export default function About() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {
-                        data.map(i => <div className="col-span-1">
+                        data.map(i => <div key={i.postion} className="col-span-1">
                             <div className={` ${poppins.className} my-4  cursor-pointer  flex group flex-col items-center gap-2 justify-center`}>
                                 <img src={i.img} className={`w-64 object-center rounded-md h-64 object-cover border-[8px] p-2 ${i.postion == "President" ? "border-sky-700" : i.postion.toLowerCase().includes("vp ") ? "border-purple-500" : "border-green-700"} transition-all duration-150 group-hover:border-white`} />
                                 <p className=" text-xl font-bold">{i.name}</p>

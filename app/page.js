@@ -87,7 +87,7 @@ export default function Home() {
             <Link href={'/events'} className='text-md whitespace-nowrap lg:text-xl  font-medium px-4 lg:px-12 py-2 lg:py-4  rounded-md transition-all duration-300 bg-slate-200  hover:bg-slate-900  hover:text-white'>
               View Events
             </Link>
-            <Link href={'/'} className='text-md whitespace-nowrap lg:text-xl   font-medium px-4 lg:px-12 py-2 lg:py-4  rounded-md transition-all duration-300 bg-white text-slate-900 border-slate-900 border  hover:bg-white  hover:text-slate-900'>
+            <Link href={'https://registrations.mustcon.com.pk'} className='text-md whitespace-nowrap lg:text-xl   font-medium px-4 lg:px-12 py-2 lg:py-4  rounded-md transition-all duration-300 bg-white text-slate-900 border-slate-900 border  hover:bg-white  hover:text-slate-900'>
               Register
             </Link>
           </div>

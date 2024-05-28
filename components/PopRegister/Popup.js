@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
 export const Popup = ({ details, event, closeModal }) => {
@@ -37,9 +38,9 @@ export const Popup = ({ details, event, closeModal }) => {
                   </table>
                 </div>
                 <div className="mt-6 flex justify-center space-x-4">
-                  <button className="bg-[#2C3E50] text-[#FFFFFF] text-[16px] border-2 border-solid border-[#2C3E50] font-bold py-2 px-4 rounded">
+                  <Link href={"https://registrations.mustcon.com.pk"} className="bg-[#2C3E50] text-[#FFFFFF] text-[16px] border-2 border-solid border-[#2C3E50] font-bold py-2 px-4 rounded">
                     Register Now
-                  </button>
+                  </Link>
                 </div>
               </div>
 
