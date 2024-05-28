@@ -72,8 +72,11 @@ export default function Index() {
                     {/*  <Link href={"tel:+923169322863"} className="flex flex-row items-center gap-4"> <FaPhoneAlt size={24} /> <p className="text-lg" > +92 316 9322863 </p>  </Link>
                     <Link href={"tel:0519153275"} className="flex flex-row items-center gap-4"> <FaPhoneAlt size={24} /> <p className="text-lg" > 051 9153275 </p>  </Link> */}
                 </div>
+
+
             </section>
 
+            
         </footer>
     </>
 }

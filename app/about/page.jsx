@@ -15,7 +15,7 @@ export default function About() {
         postion: "President"
     },
     {
-        img: "/images/about/Umer.jpg",
+        img: "/images/about/UMER.jpg",
         name: "Umer M.",
         postion: "VP Management"
     },
@@ -25,7 +25,7 @@ export default function About() {
         postion: "VP Events"
     },
     {
-        img: "/images/about/Sarim.jpg",
+        img: "/images/about/sarim.jpg",
         name: "Sarim S.",
         postion: "VP External Affair"
     },
@@ -35,8 +35,8 @@ export default function About() {
         postion: "VP Services"
     },
     {
-        img: "/images/about/Maira.jpg",
-        name: "Hammad K.",
+        img: "/images/about/MAIRA.jpg",
+        name: "Maira",
         postion: "VP Internal Affair"
     },
     {
