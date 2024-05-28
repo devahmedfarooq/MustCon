@@ -36,7 +36,7 @@ export default function About() {
     },
     {
         img: "/images/about/MAIRA.jpg",
-        name: "Maira",
+        name: "Maira A.",
         postion: "VP Internal Affair"
     },
     {
