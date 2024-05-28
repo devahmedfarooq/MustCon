@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 export default function Index() {
     return <>
-        <footer className={"min-h-[85vh] flex flex-row items-center px-6 lg:px-4 py-24 relative bg-pruple " + poppins.className}>
+        <footer className={"min-h-[85vh] flex flex-row items-center px-6 lg:px-4 py-24 relative flex-wrap bg-pruple " + poppins.className}>
 
             <img src="/icons/shape-1.png" className=" absolute top-[10%] left-[10%]" />
             <img src="/icons/shape-2.png" className="absolute bottom-[10%] right-[10%]" />
@@ -73,12 +73,15 @@ export default function Index() {
                     <Link href={"tel:0519153275"} className="flex flex-row items-center gap-4"> <FaPhoneAlt size={24} /> <p className="text-lg" > 051 9153275 </p>  </Link> */}
                 </div>
 
-               
-
-
             </section>
 
-             
+            <section className="w-full">
+                <div className="flex-[9] flex flex-row justify-center items-center">
+                    <p className="text-xl text-white">Developed by <Link className="hover:underline underline-offset-8 cursor-pointer transition-all" href={"https://www.linkedin.com/in/ahmed-farooq-451949201/"}>Ahmed F.</Link> and <Link className="hover:underline underline-offset-8 cursor-pointer transition-all" href={"https://www.linkedin.com/in/muhammad-asim-shakoor-99b52725a/"}>Asim S.</Link></p>
+                </div>
+            </section>
+
+
         </footer>
     </>
 }
