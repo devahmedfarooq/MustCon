@@ -93,7 +93,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex-1 flex flex-row justify-center items-center">
-          <img src={"/images/Logo.png"} className="w-full max-w-[500px]" />
+          <img src={"/images/logo.png"} className="w-full max-w-[500px]" />
 
         </div>
 
