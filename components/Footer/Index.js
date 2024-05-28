@@ -19,7 +19,7 @@ export default function Index() {
             <img src="/icons/shape-1.png" className=" absolute top-[10%] left-[10%]" />
             <img src="/icons/shape-2.png" className="absolute bottom-[10%] right-[10%]" />
 
-            <section className="flex flex-col lg:flex-row text-white justify-between gap-4">
+            <section className="flex flex-col lg:flex-row flex-wrap text-white justify-between gap-4">
                 <div className="flex-[3]">
                     <h4 className="text-3xl font-medium"> Find Us </h4>
                     <p className="text-md my-2" > MustCon' 24 is designed to be the largest Technical Olympiad of Kashmir. It will encourage the practical implementation of engineering and applied sciences through a range of technical events in the fields of mechatronics, mechanical, electrical, computer sciences & applied sciences.</p>
@@ -73,10 +73,12 @@ export default function Index() {
                     <Link href={"tel:0519153275"} className="flex flex-row items-center gap-4"> <FaPhoneAlt size={24} /> <p className="text-lg" > 051 9153275 </p>  </Link> */}
                 </div>
 
+               
+
 
             </section>
 
-            
+             
         </footer>
     </>
 }
